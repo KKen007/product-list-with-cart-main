@@ -10,7 +10,7 @@ let default_order = document.querySelector(".order");
 let order_grid = document.querySelector(".order-grid");
 let order_confirmed = document.querySelector(".order-confirmed")
 
-fetch("./data.json")
+fetch("https://kken007.github.io/product-list-with-cart-main/data.json")
 .then(response => response.json())
 .then(cards => {
     for ( let i = 0; i < cards.length; i++  ) {
