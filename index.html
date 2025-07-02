@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Product list with cart</title>
+</head>
+<body>
+  <main>
+    <h1 class="ttl">
+      Desserts
+    </h1>
+    <div class="crd-grd">
+      <section id=""  class="crd" data-slt="false">
+        <div class="crd-img-add">
+          <img class="crd-img" src="">
+          <button class="add-btn"><img src="assets/images/icon-add-to-cart.svg" alt=""><p>Add to Cart</p></button>
+          <div class="qtt-set">
+            <button class="dec-btn"><img src="assets/images/icon-decrement-quantity.svg" alt=""></button> 
+            <p class="qtt"></p>
+            <button class="inc-btn"><img src="assets/images/icon-increment-quantity.svg" alt=""></button>
+        </div>
+        </div>
+        <div class="crd-dtl">
+          <p class="crd-ctg"></p>
+          <p class="crd-nme"></p>
+          <p class="crd-prc"></p>
+        </div>
+      </section>
+    </div>
+    <section class="crd-slt-ctn" data-empty="true" >
+      <h2 class="crd-slt-grd-ttl">
+        Your Cart (<span class="crd-slt-nmb">0</span>)
+      </h2>
+      <div class="emp-dtl">
+        <img class="crd-slt-emp" src="assets/images/illustration-empty-cart.svg" alt="">
+        <p>Your added items will appear here</p>
+      </div>
+      <div class="crd-slt-grd">
+        <section class="crd-slt">
+          <div class="crd-slt-dtl">
+            <h3 class="crd-slt-ttl"><a href="#"></a></h3>
+            <p class="prc-ctn">
+              <span class="qtt-slt"></span>
+              <span class="crd-prc"></span>
+              <span class="qtt-slt-prc"></span>
+            </p>
+          </div>
+          <button class="rmv-btn">
+            <img src="assets/images/icon-remove-item.svg" alt="">
+          </button>
+        </section>
+        
+      </div>
+      <div class="crd-slt-btm">
+        <p class="ttl">
+         <span>Order Total </span><span class="ttl-prc"></span>
+        </p>
+        <div class="carbon-neutral">
+          <img src="assets/images/icon-carbon-neutral.svg" alt="">
+          <p>This is a <strong>carbon-neutral</strong> delivery</p>
+        </div>
+        <button class="cfm-btn">
+          Confirm Order
+        </button>
+      </div>
+    </section>
+  </main>
+  <section class="order-confirmed" data-empty="true">
+    <img class="confirmed-image" src="assets/images/icon-order-confirmed.svg" alt="">
+    <h2>Order Confirmed</h2>
+    <p>We hope you enjoy your food !</p>
+    <div class="order-grid">
+      <section class="order">
+        <div class="order-detail">
+          <img class="order-image" src="assets/images/image-baklava-thumbnail.jpg" alt="">
+          <div>
+            <h4 class="order-title">Classic Tiramisu</h4>
+            <p><span class="order-quantity">1x</span> <span class="order-price">@ $5.50</span></p>
+          </div>
+        </div>
+        <p class="order-total-price">$5.50</p>
+      </section>
+    </div>
+    <p class="total">
+        <span>Order Total </span><span class="total-price">$200</span>
+      </p>
+    <button class="start-new-order">Start New Order</button>
+  </section>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>
